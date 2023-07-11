@@ -6,9 +6,13 @@ Aphelios Aphelios	Defeat	0/3/1	ItemsItemsItemsItems	21:29	2023-07-07	WBG vs Ultr
 lines = data.strip().split('\n')
 extracted_data = []
 
+total_kills = 0
+num_matches = len(lines)
+
 for line in lines:
     line = line.strip()
     elements = line.split('\t')
+
     champion = elements[0]
     outcome = elements[1]
     kda = elements[2]
@@ -37,3 +41,9 @@ for champion, outcome, kda, kills, deaths, assists, game_time, match_date, match
     print(f"Assists: {assists}")
     print(f"Game Time: {game_time}")
     print(f"Match Date: {match_date}")
+
+"""
+
+print(f"Total Kills: {total_kills}")
+print(f"Number of Matches: {num_matches}")
+print(f"Average Kills per Match: {average_kills}")
