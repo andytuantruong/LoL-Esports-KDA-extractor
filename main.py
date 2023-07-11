@@ -1,6 +1,11 @@
 data = """
-Varus Varus	Defeat	0/2/3	ItemsItemsItemsItemsItemsItems	25:43	2023-07-07	WBG vs Ultra Prime	LPL Summer 2023
-Aphelios Aphelios	Defeat	0/3/1	ItemsItemsItemsItems	21:29	2023-07-07	WBG vs Ultra Prime	LPL Summer 2023
+LeBlanc LeBlanc	Victory	4/0/6	ItemsItemsItemsItemsItemsItems	29:14	2023-07-08	OMG vs TT	LPL Summer 2023
+Jayce Jayce	Victory	8/2/8	ItemsItemsItemsItemsItemsItems	29:32	2023-07-08	OMG vs TT	LPL Summer 2023
+Tristana Tristana	Victory	13/0/6	ItemsItemsItemsItemsItemsItems	27:28	2023-07-06	TT vs IG	LPL Summer 2023
+Tristana Tristana	Victory	8/1/5	ItemsItemsItemsItemsItemsItems	30:25	2023-07-06	TT vs IG	LPL Summer 2023
+Neeko Neeko	Victory	4/2/14	ItemsItemsItemsItemsItemsItems	40:36	2023-07-04	EDG vs TT	LPL Summer 2023
+Azir Azir	Victory	11/1/10	ItemsItemsItemsItemsItemsItems	35:58	2023-07-04	EDG vs TT	LPL Summer 2023
+Azir Azir	Defeat	10/5/8	ItemsItemsItemsItemsItemsItems	41:14	2023-07-04	EDG vs TT	LPL Summer 2023
 """
 
 lines = data.strip().split('\n')
