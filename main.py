@@ -16,11 +16,24 @@ for line in lines:
     match_date = elements[5]
     match_details = elements[6]
     
-    extracted_data.append((champion, outcome, kda, game_time, match_date, match_details))
+    #used to separate kills, deaths, and assists
+    kda_values = kda.split('/') #delimiter between '/'
+    kills = int(kda_values[0])
+    deaths = int(kda_values[1])
+    assists = int(kda_values[2])
 
-for champion, outcome, kda, game_time, match_date, match_details in extracted_data:
+    total_kills += kills
+    extracted_data.append((champion, outcome, kda, kills, deaths, assists, game_time, match_date, match_details))
+
+average_kills = round(total_kills / num_matches, 3)
+
+"""
+for champion, outcome, kda, kills, deaths, assists, game_time, match_date, match_details in extracted_data:
     print(f"Champion: {champion}")
     print(f"Outcome: {outcome}")
     print(f"KDA: {kda}")
+    print(f"Kills: {kills}")
+    print(f"Deaths: {deaths}")
+    print(f"Assists: {assists}")
     print(f"Game Time: {game_time}")
     print(f"Match Date: {match_date}")
