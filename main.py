@@ -46,7 +46,6 @@ for champion, outcome, kda, kills, deaths, assists, game_time, match_date, match
     print(f"Assists: {assists}")
     print(f"Game Time: {game_time}")
     print(f"Match Date: {match_date}")
-
 """
 
 print(f"Total Kills: {total_kills}")
