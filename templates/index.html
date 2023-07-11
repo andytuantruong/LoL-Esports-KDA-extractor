@@ -19,12 +19,18 @@
                 <h3>Average Statistics:</h3>
                 <p>Total Kills: {{ total_kills }}</p>
                 <p>Number of Matches: {{ num_matches }}</p>
-                <p>Average Kills per Match: {{ average_kills }}</p>
-                <p>Average Kills in Two Maps: {{ kills_in_two_maps }}</p>
                 <p>Amount of Victories: {{ num_victories }}</p>
                 <p>Amount of Losses: {{ num_losses }}</p>
+                <br>
+                <p>Average Kills per Match: {{ average_kills }}</p>
                 <p>Average Kills per Victory: {{ average_victory_kills }}</p>
                 <p>Average Kills per Loss: {{ average_loss_kills }}</p>
+                <br>
+                <p>Average Kills in Map1+2: {{ kills_in_two_maps }}</p>
+                <p>Average Kills per Victory Map1+2: {{ average_victory_kills_two_maps }}</p>
+                <p>Average Kills per Loss Map1+2: {{ average_loss_kills_two_maps }}</p>
+                <p>Average Kills per Victory/Loss Map1+2: {{ average_split_kills_two_maps }}</p>
+
             </div>
         </div>
     </body>
