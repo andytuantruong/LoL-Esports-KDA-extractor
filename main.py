@@ -54,17 +54,23 @@ def process():
     average_kills = round(total_kills / num_matches, 3)
     average_victory_kills = round(total_victory_kills / num_victories, 3)
     average_loss_kills = round(total_loss_kills / num_losses, 3)
-    kills_in_two_maps = average_kills * 2
     
+    kills_in_two_maps = average_kills * 2
     average_victory_kills_two_maps = average_victory_kills * 2
     average_loss_kills_two_maps = average_loss_kills * 2
     average_split_kills_two_maps = average_victory_kills + average_loss_kills
 
+    kills_in_three_maps = average_kills * 3
+    average_victory_kills_three_maps = average_victory_kills * 3
+    average_loss_kills_three_maps = average_loss_kills * 3
 
     return render_template('index.html', extracted_data=extracted_data, total_kills=total_kills, num_matches=num_matches, 
                            average_kills=average_kills, kills_in_two_maps=kills_in_two_maps, num_victories=num_victories,
                            num_losses=num_losses, average_victory_kills=average_victory_kills, average_loss_kills=average_loss_kills,
                             average_victory_kills_two_maps=average_victory_kills_two_maps,average_loss_kills_two_maps=average_loss_kills_two_maps,
-                            average_split_kills_two_maps=average_split_kills_two_maps)
+                            average_split_kills_two_maps=average_split_kills_two_maps,
+                            kills_in_three_maps=kills_in_three_maps,
+                            average_victory_kills_three_maps=average_victory_kills_three_maps,
+                            average_loss_kills_three_maps=average_loss_kills_three_maps)
 if __name__ == '__main__':
     app.run()
