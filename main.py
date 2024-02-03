@@ -51,9 +51,14 @@ def process():
             num_losses += 1
             total_loss_kills += kills
 
-    average_kills = round(total_kills / num_matches, 3)
-    average_victory_kills = round(total_victory_kills / num_victories, 3)
-    average_loss_kills = round(total_loss_kills / num_losses, 3)
+    if num_matches != 0:
+        average_kills = round(total_kills / num_matches, 3)
+
+    if num_victories != 0:
+        average_victory_kills = round(total_victory_kills / num_victories, 3)
+
+    if num_losses != 0:
+        average_loss_kills = round(total_loss_kills / num_losses, 3)
     
     kills_in_two_maps = average_kills * 2
     average_victory_kills_two_maps = average_victory_kills * 2
